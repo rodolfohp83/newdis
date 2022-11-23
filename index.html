@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWDIS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />    
+    <link rel="stylesheet" type="text/css" href="css/style.css" />    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body id="home">
+    <div class="circle-box">
+        <div class="circle"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>    
+    </div>
+    <div  class="header">
+            <div class="logo"><img src="img/logo.svg" alt="Newdis Logo"></div>
+            <div class="nav">
+                <a href="#" class="nav-item">SERVICIOS</a>
+                <a href="#" class="nav-item">PORTAFOLIO</a>
+                <a href="#cta" class="nav-item">CONTACTO</a>
+            </div>
+    </div>
+    <div class="hero">
+        <div class="item-hero">  
+                <h1>Grandes ideas <br> que maximizan<br> tu empresa</h1>
+                <p>Ayudamos a alcanzar a tu empresa o negocio a alcanzar su máximo potencial
+                    con ideas creativas para diferenciarse de la competencia.
+                </p>
+                <a href="#" class="btn">Cuentanos tu proyecto</a>
+                <!-- <div class="explore">EXPLORE</div> -->
+        </div>
+        <div class="item-hero">
+            <div class="box-img-hero">
+                <img class="testimonio-img-hero" src="img/testimonio_1.png" alt="">
+                <img class="main-img-hero" src="img/hero.png" alt="">
+                <img class="testimonio-img-hero" src="img/testimonio_2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div class="about-item">
+                <img src="img/aboutus-newdis.png" alt="">
+            </div>
+            <div class="about-item">
+                <div class="title">Creamos soluciones que transforman tu negocio</div>
+                <p>Somos <span>NEWDIS</span>, una agencia digital especializada la creación de plataformas digitales. Ya sea que necesites una pagina web para tu negocio, una tienda en linea, una identidad para tu empresa nosotros podemos ayudarte.<br><br>
+                   Nuestro proceso es simple: inicia con un brief, concepto, diseño y ejecución.</p>
+            </div>
+        </div>
+    </div>
+    <div class="servicios">
+        <div class="container">
+            <div class="title">Impulsa tu negocio al siguiente nivel</div>
+            <div class="subtitle">Todas las empresas tienen retos y metas, nosotros te ofrecemos<br> soluciones creativas a las necesidades de tu empresa.</div>
+            <div class="servicios-row">
+                <div class="servicios-item">
+                    <div class="servicios-item-title">Productos digitales</div>
+                    <ul>
+                        <li>Website institucional.</li>
+                        <li>Landing page.</li>
+                        <li>E-commerse.</li>
+                        <li>Identidad Digital.</li>
+                        <li>Apps.</li>
+                        <li>Sistemas empresariales.</li>
+                        <li>Microservicios.</li>
+                    </ul>
+                </div>
+                <div class="servicios-item">
+                    <div class="servicios-item-title">Diseño</div>
+                    <ul>
+                        <li>Branding y Namening.</li>
+                        <li>Identidad corporativa.</li>
+                        <li>Aplicaciones gráficas.</li>
+                        <li>Asesoría a nuevas empresas.</li>
+                    </ul>
+                </div>
+                <div class="servicios-item">
+                    <div class="servicios-item-title">Motion</div>
+                    <ul>
+                        <li>Animacion de logotipo.</li>
+                        <li>Videos institucionales.</li>
+                        <li>Videos para redes sociales.</li>
+                        <li>Comerciales.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cta" class="calltoaction">
+        <div class="container">
+            <div class="calltoaction-item">
+                <div class="title">
+                    ¿Necesitas asesoría?
+                </div>
+                <p>Cuéntanos lo que quieres lograr para tu proyecto y crearemos un plan personalizado con orientación y recursos para alcanzar tus metas.</p>
+                <a href="" class="btn">Mándanos un mensaje</a>
+            </div>
+            <div class="calltoaction-item">
+                <img src="img/cta-img.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="item-row">
+                <div class="item-footer">
+                   <a href="#home"><img src="img/logo-footer.svg" alt="Newdis Logo" class="logo-footer"></a>
+                </div>
+                <div class="item-footer">
+                    <div class="title-item-footer">Ponte en contacto</div>
+                    <div class="tel">
+                        <img src="img/phone.svg" alt="">
+                        <a href="#">81.1564.6273</a>
+                    </div>
+                    <div class="mail">
+                        <img src="img/mail.svg" alt="">
+                       <a href="mailto:hello@newdis.com.mx" target="_blank">hello@newdis.com.mx</a>
+                    </div>
+                </div>
+                <div class="item-footer">
+                    <div class="title-item-footer">Conéctate con nosotros</div>
+                        <a href="#">Linkedin</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Behance</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        © 2022 NEWDIS
+    </div>
+    <!-- SCRIPTS -->
+    <script>
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 50) {
+                $(".header").addClass("activo");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+            $(".header").removeClass("activo");
+            }
+        });
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 50) {
+                $(".menu-mobile").addClass("activo");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+            $(".menu-mobile").removeClass("activo");
+            }
+        });
+    </script> 
+</body>
+</html>

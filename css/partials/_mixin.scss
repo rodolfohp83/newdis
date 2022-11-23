@@ -1,0 +1,38 @@
+
+$color_black: #070439;
+
+
+@mixin btn {
+    background: rgb(255,246,85);
+    background: linear-gradient(90deg, rgba(255,246,85,1) 0%, rgba(3,255,231,1) 100%);
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    border: solid 2px #fff;
+    &:hover {
+        background: linear-gradient(270deg, rgba(255,246,85,1) 0%, rgba(3,255,231,1) 100%);
+        transform: scale(1.1);
+        transition: 0.5s ease-in-out;
+
+    }
+}
+
+@mixin title{
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+@mixin subtitle{
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+@mixin gradientext {
+    font-size: 1.4em;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#FFF655, #03FFE7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

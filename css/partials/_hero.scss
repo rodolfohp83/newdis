@@ -15,6 +15,7 @@
                 font-weight: bold;
                 font-size: 3.5em;
                 margin-bottom: 25px;
+                line-height: 0.9em;
             }
             p {
                 margin-bottom: 25px;
@@ -58,4 +59,8 @@
                 }
             }
         }
+}
+
+.widget-mobile {
+    right: 0;
 }

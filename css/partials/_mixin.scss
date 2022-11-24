@@ -10,7 +10,6 @@ $color_black: #070439;
     padding: 10px 20px;
     font-weight: bold;
     transition: 0.5s ease-in-out;
-    border: solid 2px #fff;
     &:hover {
         background: linear-gradient(270deg, rgba(255,246,85,1) 0%, rgba(3,255,231,1) 100%);
         transform: scale(1.1);
@@ -32,7 +31,7 @@ $color_black: #070439;
 @mixin gradientext {
     font-size: 1.4em;
     font-weight: bold;
-    background: -webkit-linear-gradient(#FFF655, #03FFE7);
+    background: -webkit-linear-gradient(360deg, #FFF655, #03FFE7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

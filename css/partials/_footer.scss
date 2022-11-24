@@ -21,7 +21,12 @@
                 }
                 .logo-footer {
                     width: 200px;
-                    height: 100%;
+                }
+                p {
+                    width: 200px;
+                    margin-top: 10px;
+                    font-size: 10px;
+                    text-align: center;
                 }
                 .tel, .mail {
                     display: flex;

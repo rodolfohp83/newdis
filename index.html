@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEWDIS</title>
+    <title>NEWDIS | Estudio de diseño digital</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />    
     <link rel="stylesheet" type="text/css" href="css/style.css" />    
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
 </head>
 <body id="home">
     <div class="circle-box">
@@ -23,6 +25,22 @@
                 <a href="#" class="nav-item">PORTAFOLIO</a>
                 <a href="#cta" class="nav-item">CONTACTO</a>
             </div>
+    </div>
+    <div class="menu-mobile ">
+        <a href="#">
+            <div class="logo"> <img src="img/logo.svg" alt="Newdis Logo"> </div>
+        </a>
+        <div class="menuIcon toggle">
+            <span class="icon icon-bars"></span>
+            <span class="icon icon-bars overlay"></span>
+        </div>
+    </div>
+    <div class="overlay-menu" >          
+        <ul class="menu-inner" id="menu">
+           <li><a href="#" class="nav-item">SERVICIOS</a></li>
+           <li><a href="#" class="nav-item">PORTAFOLIO</a></li>
+           <li><a href="#" class="nav-item">CONTACTO</a></li>
+        </ul>
     </div>
     <div class="hero">
         <div class="item-hero">  
@@ -41,6 +59,7 @@
             </div>
         </div>
     </div>
+    <div class="elfsight-app-bdc874d7-ed99-4d76-b9f7-b4063e19e2e5 widget-mobile"></div>
     <div class="about">
         <div class="container">
             <div class="about-item">
@@ -56,36 +75,36 @@
     <div class="servicios">
         <div class="container">
             <div class="title">Impulsa tu negocio al siguiente nivel</div>
-            <div class="subtitle">Todas las empresas tienen retos y metas, nosotros te ofrecemos<br> soluciones creativas a las necesidades de tu empresa.</div>
+            <div class="subtitle">Todas las empresas tienen retos y metas, nosotros te ofrecemos soluciones creativas a las necesidades de tu empresa.</div>
             <div class="servicios-row">
                 <div class="servicios-item">
                     <div class="servicios-item-title">Productos digitales</div>
                     <ul>
-                        <li>Website institucional.</li>
-                        <li>Landing page.</li>
-                        <li>E-commerse.</li>
-                        <li>Identidad Digital.</li>
-                        <li>Apps.</li>
-                        <li>Sistemas empresariales.</li>
-                        <li>Microservicios.</li>
+                        <li>Website institucional</li>
+                        <li>Landing page</li>
+                        <li>E-commerse</li>
+                        <li>Identidad Digital</li>
+                        <li>Apps</li>
+                        <li>Sistemas empresariales</li>
+                        <li>Microservicios</li>
                     </ul>
                 </div>
                 <div class="servicios-item">
                     <div class="servicios-item-title">Diseño</div>
                     <ul>
-                        <li>Branding y Namening.</li>
-                        <li>Identidad corporativa.</li>
-                        <li>Aplicaciones gráficas.</li>
-                        <li>Asesoría a nuevas empresas.</li>
+                        <li>Branding y Namening</li>
+                        <li>Identidad corporativa</li>
+                        <li>Aplicaciones gráficas</li>
+                        <li>Asesoría a nuevas empresas</li>
                     </ul>
                 </div>
                 <div class="servicios-item">
-                    <div class="servicios-item-title">Motion</div>
+                    <div class="servicios-item-title">Motion Graphics</div>
                     <ul>
-                        <li>Animacion de logotipo.</li>
-                        <li>Videos institucionales.</li>
-                        <li>Videos para redes sociales.</li>
-                        <li>Comerciales.</li>
+                        <li>Animación de logotipo</li>
+                        <li>Videos institucionales</li>
+                        <li>Videos para redes sociales</li>
+                        <li>Comerciales</li>
                     </ul>
                 </div>
             </div>
@@ -110,6 +129,7 @@
             <div class="item-row">
                 <div class="item-footer">
                    <a href="#home"><img src="img/logo-footer.svg" alt="Newdis Logo" class="logo-footer"></a>
+                    <p>Estudio de diseño digital</p>
                 </div>
                 <div class="item-footer">
                     <div class="title-item-footer">Ponte en contacto</div>
@@ -136,6 +156,7 @@
         © 2022 NEWDIS
     </div>
     <!-- SCRIPTS -->
+    <script src="js/menu.js"></script>
     <script>
         $(window).on("scroll", function() {
             if($(window).scrollTop() > 50) {

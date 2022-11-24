@@ -1,10 +1,14 @@
 .servicios {
     background-color: $color_black;
     background-color: #262629;
-    padding: 100px 0;
     color: #fff;
+    height: 100vh;
+    display: grid;
+    place-items:  center;
+    height: 100vh;
     .container {
         .title {
+            @include gradientext;
             @include title;
             margin-bottom: 0;
             text-align: center;
@@ -16,17 +20,33 @@
         }
         .servicios-row {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            flex-wrap: wrap;
             .servicios-item {
+                border: solid 1px red;
+                text-align: center;
+                padding: 0 15px;
+                width: 30%;
+                .servicios-icon {
+                    margin:  15px auto;
+                    width: 50px;
+                    transform: scale(0.8);
+                    img {
+                        border: solid 1px lime;
+                    }
+                }
+                &:hover {
+                    .servicios-icon {
+                        transform: scale(1);
+                        transition: 0.3s ease-in-out;
+                        // img {
+                        // }
+                    }
+                }
                 .servicios-item-title {
                     @include gradientext;
-                    margin-bottom: 20px;
-                }
-                ul {
-                    padding-left: 0;
-                }
-                ul li {
-                    list-style: none;
+                    font-size: 18px;
+                    margin-bottom: 5px;
                 }
             }
         }

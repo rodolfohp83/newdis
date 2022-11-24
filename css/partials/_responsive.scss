@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+    .circle-box {
+        display: none;
+    }
     .header {
         display: none;
     }
@@ -106,9 +109,10 @@
 
     .hero {
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         .item-hero {
             width: 100%;
+            height: 50%;
             h1 {
                 font-size: 2em;
                 text-align: center;
@@ -125,6 +129,7 @@
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+                justify-content: flex-end;
             }
             .box-img-hero {
                 margin-top: 0;
@@ -151,6 +156,8 @@
         }
     }
     .servicios {
+        padding: 50px 0;
+        height: auto;
         .container {
             .title {
                 font-size: 1.5em;
@@ -164,6 +171,7 @@
             .servicios-row {
                 flex-direction: column;
                 .servicios-item {
+                    width: 100%;
                     text-align: center;
                     margin-bottom: 30px;
                 }

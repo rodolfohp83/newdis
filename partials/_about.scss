@@ -1,0 +1,27 @@
+.about {
+    padding: 10vh 0;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .about-item {
+            width: 60%;
+            &:last-child {
+                width: 40%
+            }
+            .title {
+                @include title;
+            }
+            img {
+                padding: 20px 40px 20px 0;
+            }
+            p {
+                span {
+                    font-weight: bold;
+                    background: linear-gradient(90deg, rgba(255,246,85,1) 0%, rgba(3,255,231,1) 100%);
+                    padding: 3px;
+                }
+            }
+        }
+    }
+}

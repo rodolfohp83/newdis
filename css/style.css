@@ -510,6 +510,8 @@ body ul li {
     width: 100%;
     z-index: 9999;
     position: fixed;
+    border: solid 1px red;
+    height: 70px;
   }
   .menu-mobile .logo {
     width: 180px;

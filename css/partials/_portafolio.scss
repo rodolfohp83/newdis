@@ -1,10 +1,10 @@
 .portafolio {
-    background-color: #262629;
     .title {
         @include title;
-        color: #fff;
+        color: #262629;
         padding: 20px 0;
         text-align: center;
+        margin: 30px 0;
     }
     .portafolio-row {
         display: flex;

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEWDIS | Especialistas en Diseño Web</title>
+    <meta name="description" content="Agencia de Marketing Digital en Monterrey. Especialistas en Diseño Web, te ayudamos a Maximisar las posibilidades que tiene tu empresa.">
+    <meta name="keywords"  content="Creacion de Páginas Web. Desarrollo a la Medida. Posicionamiento SEO. Llámanos. Creación de marcas. Identidad Corporativa. Diseño Web. Tienda En Linea. Soluciones Digitales. Servicio De Consultoría. Video. Marketing, Branding, Web, Identidad corporativa.">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />    
     <link rel="stylesheet" type="text/css" href="css/style.css" />    
@@ -30,14 +32,19 @@
         <a href="#">
             <div class="logo"> <img src="img/logo.svg" alt="Newdis Logo"> </div>
         </a>
-        <div class="menuIcon toggle">
+        <!-- <div class="menuIcon toggle">
             <span class="icon icon-bars"></span>
             <span class="icon icon-bars overlay"></span>
-        </div>
+        </div> -->
+        <a href="#" class="button-nav--toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
     </div>
     <div class="overlay-menu" >          
         <ul class="menu-inner" id="menu">
-           <li><a href="#servicios" class="nav-item">SERVICIOS</a></li>  
+           <li><a href="#servicios" class="nav-item">SERVICIOS</a></li>
            <li><a href="#portafolio" class="nav-item">PORTAFOLIO</a></li>
            <li><a href="#cta" class="nav-item">CONTACTO</a></li>
         </ul>
@@ -82,7 +89,7 @@
                     </div>
                     <div class="servicios-item-title">P&aacute;ginas Web</div>
                     <div class="text">
-                        Desarrollamos tu página web interactiva, funcional, autoadministrable y adaptable a dispositivos móviles. 
+                        Desarrollamos tu página web interactiva, funcional, autoadministrable y adaptable a dispositivos móviles.
                     </div>
                     
                 </div>
@@ -134,7 +141,7 @@
         </div>
         <div class="portafolio-row">
             <a href="https://shipandbox.com/" target="_blank" class="portafolio-item">
-                <img src="img/book-1.png" alt="">
+                <img src="img/book-1.webp" alt="">
                 <div class="portafolio-text-item">
                     <div>
                         <div class="title-serv">Ship & Box</div>
@@ -143,7 +150,7 @@
                 </div>
             </a>
             <a href="https://www.multipap.mx/" target="_blank" class="portafolio-item">
-                <img src="img/book-2.png" alt="">
+                <img src="img/book-2.webp" alt="">
                 <div class="portafolio-text-item">
                     <div>
                         <div class="title-serv">Multipap</div>
@@ -152,7 +159,7 @@
                 </div>
             </a>
             <a href="https://grupovitek.com/" target="_blank" class="portafolio-item">
-                <img src="img/book-3.png" alt="">
+                <img src="img/book-3.webp" alt="">
                 <div class="portafolio-text-item">
                     <div>
                         <div class="title-serv">Grupo Vitek</div>
@@ -161,7 +168,7 @@
                 </div>
             </a>
             <a href="https://gento.com.mx/" target="_blank" class="portafolio-item">
-                <img src="img/book-4.png" alt="">
+                <img src="img/book-4.webp" alt="">
                 <div class="portafolio-text-item">
                     <div>
                         <div class="title-serv">Gento</div>
@@ -170,7 +177,7 @@
                 </div>
             </a>
             <a href="https://cleanservice.com.mx/" target="_blank" class="portafolio-item">
-                <img src="img/book-5.png" alt="">
+                <img src="img/book-5.webp" alt="">
                 <div class="portafolio-text-item">
                     <div>
                         <div class="title-serv">Clean Service</div>
@@ -179,7 +186,7 @@
                 </div>
             </a>
             <a href="https://www.siticonsultoria.com/" target="_blank" class="portafolio-item">
-                <img src="img/book-6.png" alt="">
+                <img src="img/book-6.webp" alt="">
                 <div class="portafolio-text-item">
                     <div>
                         <div class="title-serv">Siti Consultoria</div>
@@ -189,7 +196,7 @@
             </a>
         </div>
     </div>
-    <div id="cta" class="calltoaction"> 
+    <div id="cta" class="calltoaction">
         <div class="container">
             <div class="calltoaction-item">
                 <div class="title">
@@ -253,6 +260,17 @@
             $(".menu-mobile").removeClass("activo");
             }
         });
+
+        $(document).ready(function() {
+  
+        /* CLick BTN (Open and Close) */
+            $('.button-nav--toggle').on('click', function(e) {
+                e.preventDefault();
+                $(this).toggleClass('active');
+            });
+        
+        });
+
     </script> 
 </body>
 </html>

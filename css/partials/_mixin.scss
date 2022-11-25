@@ -24,8 +24,10 @@ $color_black: #070439;
     margin-bottom: 30px;
 }
 @mixin subtitle{
-    font-size: 1.2em;
+    font-size: 18px;
     margin-bottom: 30px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 @mixin gradientext {

@@ -1,0 +1,45 @@
+.portafolio {
+    background-color: #262629;
+    .title {
+        @include title;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .portafolio-row {
+        display: flex;
+        flex-wrap: wrap;
+        .portafolio-item {
+            width: 50%;
+            display: grid;
+            place-items:  center;
+            position: relative;
+            .portafolio-text-item {
+                background-color: rgba(38, 38, 41, 0.8);
+                color: #fff;
+                position: absolute;
+                z-index: 100;
+                width: 90%;
+                height: 70%;
+                border-radius: 10px;
+                text-align: center;
+                display: grid;
+                place-items:  center;
+                opacity: 0;
+                transform: scale(0.8);
+                transition: 0.3s ease-in-out;
+                .title-serv {
+                    font-size: 1.3em;
+                    font-weight: bold;
+                }
+            }
+            &:hover {
+                .portafolio-text-item {
+                    opacity: 1;
+                    transform: scale(1);
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}

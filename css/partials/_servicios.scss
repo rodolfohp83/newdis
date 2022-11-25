@@ -2,11 +2,15 @@
     background-color: $color_black;
     background-color: #262629;
     color: #fff;
-    height: 100vh;
+    height: auto;
+    padding: 100px 0;
     display: grid;
     place-items:  center;
-    height: 100vh;
     .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         .title {
             @include gradientext;
             @include title;
@@ -16,39 +20,39 @@
         .subtitle {
             @include subtitle;
             text-align: center;
-            margin-bottom: 60px;
         }
         .servicios-row {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            margin: 50px 0 0 0;
             .servicios-item {
-                border: solid 1px red;
                 text-align: center;
-                padding: 0 15px;
+                padding: 0 20px;
                 width: 30%;
+                margin-bottom: 30px;
                 .servicios-icon {
                     margin:  15px auto;
                     width: 50px;
                     transform: scale(0.8);
-                    img {
-                        border: solid 1px lime;
-                    }
                 }
                 &:hover {
                     .servicios-icon {
                         transform: scale(1);
                         transition: 0.3s ease-in-out;
-                        // img {
-                        // }
                     }
                 }
                 .servicios-item-title {
-                    @include gradientext;
+                    // @include gradientext;
                     font-size: 18px;
+                    font-weight: bold;
                     margin-bottom: 5px;
                 }
             }
+        }
+        .btn {
+            @include btn;
+            margin-top: 20px;
         }
     }
 }

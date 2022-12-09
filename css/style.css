@@ -187,7 +187,7 @@ body ul li {
 
 .header {
   padding: 15px;
-  z-index: 9999;
+  z-index: 9988;
   position: fixed;
   width: 100%;
   display: flex;
@@ -205,18 +205,25 @@ body ul li {
 .header .nav .nav-item {
   padding: 0 15px;
   position: relative;
-}
-.header .nav .nav-item:hover {
+  overflow: hidden;
+  text-align: center;
   font-weight: bold;
 }
-.header .nav .nav-item:hover::after {
+.header .nav .nav-item::after {
+  transform: translateX(120px);
   content: "";
   position: absolute;
-  width: 40px;
-  height: 3px;
-  right: 15px;
+  width: 100%;
+  height: 30px;
+  right: 0;
   bottom: 0px;
   background: linear-gradient(90deg, rgb(255, 246, 85) 0%, rgb(3, 255, 231) 100%);
+  transition: 0.3s;
+  z-index: -1;
+}
+.header .nav .nav-item:hover::after {
+  transform: translateX(0px);
+  transition: 0.3s;
 }
 
 .activo {
@@ -342,8 +349,7 @@ body ul li {
   background-color: #070439;
   background-color: #262629;
   color: #fff;
-  height: auto;
-  padding: 100px 0;
+  height: 100vh;
   display: grid;
   place-items: center;
 }
@@ -372,33 +378,32 @@ body ul li {
   margin: 0 auto;
   text-align: center;
 }
-.servicios .container .servicios-row {
+.servicios .servicios-row {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: 50px 0 0 0;
 }
-.servicios .container .servicios-row .servicios-item {
+.servicios .servicios-row .servicios-item {
   text-align: center;
   padding: 0 20px;
-  width: 30%;
+  width: 20%;
   margin-bottom: 30px;
 }
-.servicios .container .servicios-row .servicios-item .servicios-icon {
+.servicios .servicios-row .servicios-item .servicios-icon {
   margin: 15px auto;
   width: 50px;
   transform: scale(0.8);
 }
-.servicios .container .servicios-row .servicios-item:hover .servicios-icon {
+.servicios .servicios-row .servicios-item:hover .servicios-icon {
   transform: scale(1);
   transition: 0.3s ease-in-out;
 }
-.servicios .container .servicios-row .servicios-item .servicios-item-title {
+.servicios .servicios-row .servicios-item .servicios-item-title {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 5px;
 }
-.servicios .container .btn {
+.servicios .btn {
   background: rgb(255, 246, 85);
   background: linear-gradient(90deg, rgb(255, 246, 85) 0%, rgb(3, 255, 231) 100%);
   border-radius: 10px;
@@ -408,7 +413,7 @@ body ul li {
   transition: 0.5s ease-in-out;
   margin-top: 20px;
 }
-.servicios .container .btn:hover {
+.servicios .btn:hover {
   background: linear-gradient(270deg, rgb(255, 246, 85) 0%, rgb(3, 255, 231) 100%);
   transform: scale(1.1);
   transition: 0.5s ease-in-out;
@@ -496,15 +501,34 @@ body ul li {
 }
 
 .footer {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
   padding: 40px 0;
   background-color: #262629;
   color: #fff;
-  height: 50vh;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.footer .top-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .top-footer .title-footer {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.footer .top-footer .logo-footer {
+  width: 200px;
+  margin-bottom: 20px;
 }
 .footer .container {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 50%;
 }
 .footer .container .item-row {
   display: flex;
@@ -516,12 +540,23 @@ body ul li {
 .footer .container .item-row .item-footer {
   margin-right: 30px;
 }
+.footer .container .item-row .item-footer .btn {
+  background: rgb(255, 246, 85);
+  background: linear-gradient(90deg, rgb(255, 246, 85) 0%, rgb(3, 255, 231) 100%);
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+}
+.footer .container .item-row .item-footer .btn:hover {
+  background: linear-gradient(270deg, rgb(255, 246, 85) 0%, rgb(3, 255, 231) 100%);
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
 .footer .container .item-row .item-footer:first-child {
   width: 60%;
   height: 100%;
-}
-.footer .container .item-row .item-footer .logo-footer {
-  width: 200px;
 }
 .footer .container .item-row .item-footer p {
   width: 200px;
@@ -531,10 +566,37 @@ body ul li {
 }
 .footer .container .item-row .item-footer .tel, .footer .container .item-row .item-footer .mail {
   display: flex;
+  padding: 3px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.footer .container .item-row .item-footer .tel::after, .footer .container .item-row .item-footer .mail::after {
+  transform: translateX(101%);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  right: 0;
+  bottom: 0px;
+  background: linear-gradient(90deg, rgb(255, 246, 85) 0%, rgb(3, 255, 231) 100%);
+  transition: 0.3s;
+  z-index: -1;
 }
 .footer .container .item-row .item-footer .tel img, .footer .container .item-row .item-footer .mail img {
-  width: 15px;
+  width: 20px;
   margin-right: 10px;
+}
+.footer .container .item-row .item-footer .tel:hover, .footer .container .item-row .item-footer .mail:hover {
+  color: #070439;
+}
+.footer .container .item-row .item-footer .tel:hover::after, .footer .container .item-row .item-footer .mail:hover::after {
+  transform: translateX(0px);
+  transition: 0.3s;
+}
+.footer .container .item-row .item-footer .tel:hover img, .footer .container .item-row .item-footer .mail:hover img {
+  filter: invert(1);
 }
 .footer .container .item-row .item-footer .title-item-footer {
   font-size: 10px;
@@ -545,6 +607,33 @@ body ul li {
   display: flex;
   flex-direction: column;
   margin-right: 0;
+}
+.footer .container .item-row .item-footer:last-child .social-footer {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.footer .container .item-row .item-footer:last-child .social-footer a {
+  margin-left: 10px;
+}
+.footer .container .item-row .item-footer:last-child .social-footer::after {
+  transform: translateX(101%);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  right: 0;
+  bottom: 0px;
+  background: linear-gradient(90deg, rgb(255, 246, 85) 0%, rgb(3, 255, 231) 100%);
+  transition: 0.3s;
+  z-index: -1;
+}
+.footer .container .item-row .item-footer:last-child .social-footer:hover {
+  color: #070439;
+}
+.footer .container .item-row .item-footer:last-child .social-footer:hover::after {
+  transform: translateX(0px);
+  transition: 0.3s;
 }
 
 .bottom-footer {
